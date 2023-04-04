@@ -1,0 +1,178 @@
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 60px;
+  text-align: center;
+  background: radial-gradient(#9dc872, #4a7949, #4b5b56);
+  color: white;
+}
+
+
+
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  background-color: rgba(144, 164, 136, 0.905);
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #756060;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* colommen */
+/* links/links column */
+.side {
+  flex: 30%;
+  background-color: rgb(165, 180, 137);
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+.main h2 {
+  color: brown;
+}
+.main img {
+  width: 35%;
+  padding: 15px;
+  
+
+}
+
+
+/* foto*/
+.side img {
+  width: 80%;
+height: auto;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+.side iframe {
+  width: 90%;
+  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main iframe {
+  width: 90%;
+  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* style contact form*/
+.contact-form {
+  text-align: left;
+  margin: 20px;
+
+  
+
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  
+}
+
+
+.contact-form input
+{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  
+}
+
+/*land test*/
+#country {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  
+}
+
+/*contactform textarea*/
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  resize: none;
+}
+
+
+
+.contact-form submit {
+width: 30%;
+}
+
+button {
+background-color: rgb(215, 123, 57);
+color: white;
+
+
+}
+/* button hover*/
+button :hover {
+color: #de9393;
+border-radius: 4px;
+}
+
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: radial-gradient(#9dc872, #4a7949, #4b5b56);
+}
+
+.footer a {
+  color: rgb(228, 15, 15);
+}
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+}
